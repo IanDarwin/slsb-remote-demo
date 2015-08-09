@@ -1,0 +1,7 @@
+== SLSB Remote-With-Interface Demo
+
+Demo of the modern Java EE EJB with an interface but
+with WAR-only deployment.
+
+The Bean class is annotated with both @LocalBean and @Remote,
+and is both injected into a JSF Managed Bean and used directly.

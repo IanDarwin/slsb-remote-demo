@@ -1,0 +1,10 @@
+#!/bin/ah
+
+# build the war, deploy it, and run the standalone client
+
+set -x
+
+mvn wildfly:deploy
+
+java -cp target/classes:${HOME}/wildfly-8.2.0.Final/bin/client/jboss-client.jar \
+	stand.Client
